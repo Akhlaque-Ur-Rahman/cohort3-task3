@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="w-full flex px-10 py-6 shadow-sm items-center rounded-full">
+      <div class="logo text-2xl font-semibold">
+        ASTRO<span class="text-orange-500">.</span>
+      </div>
+
+      <ul class="flex space-x-4 justify-center items-center flex-1 gap-8">
+        <li>PRODUCTS</li>
+        <li>CATEGORY</li>
+        <li>ABOUT US</li>
+        <li>CONTACT</li>
+      </ul>
+
+      <div class="social-links flex flex-1 space-x-4 justify-end gap-2">
+        <i data-lucide="search"></i>
+        <i data-lucide="shopping-cart"></i>
+        <i data-lucide="user" class=""></i>
+      </div>
+    </nav>
+    <div class="hero w-full h-100 px-10 py-12 flex justify-between">
+      <div class="left flex-1">
+        <p class="text-orange-500 font-semibold pb-4">NEW</p>
+        <h1 class="text-7xl font-semibold">
+          ASTRO <br />WINTER <br />ARMOR
+          <span class="text-orange-500 font-semibold">||</span>
+        </h1>
+        <p class="text-2xl font-medium py-4">$560</p>
+        <hr />
+        <h3 class="text-xl font-semibold py-2">DESCRIPTION</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
+          saepe tenetur. Incidunt obcaecati minus soluta laborum, inventore
+          commodi. Praesentium hic, neque rem sapiente at delectus ea sit animi
+          nisi esse?
+        </p>
+        <p
+          class="font-semibold py-2 flex items-center gap-1 group hover:cursor-pointer"
+        >
+          READ MORE
+          <i
+            data-lucide="chevron-right"
+            class="text-orange-500 group-hover:translate-x-1 transition-transform duration-300"
+          ></i>
+        </p>
+        <hr />
+        <h3
+          class="text-xl font-semibold py-4 flex justify-between items-center"
+        >
+          MATERIAL & CARE
+          <i data-lucide="chevron-down"></i>
+        </h3>
+        <hr />
+        <h3
+          class="text-xl font-semibold py-2 flex justify-between items-center"
+        >
+          SHOPPING & RETURN
+          <i data-lucide="chevron-down"></i>
+        </h3>
+      </div>
+      <div class="center h-full w-[50%] flex flex-col items-center justify-center">
+        <img
+          src="./assets/ASTRO-Jacket-bg-removed.png"
+          alt="ASTRO Jacket"
+          class="h-[70%] w-[70%] object-cover drop-shadow-[0_70px_40px_rgba(0,0,0,0.12)] -translate-y-10 "
+        />
+        <div class="flex items-center gap-10 justify-end">
+          <div class="flex items-center gap-2">
+      <i data-lucide="snowflake" class="w-8 h-8 text-gray-500"></i>
+      <p class="text-sm text-gray-600">
+        EXTREME WARMTH
+      </p>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <i data-lucide="shield" class="w-8 h-8 text-gray-500"></i>
+      <p class="text-sm text-gray-600">
+        WIND RESISTANT
+      </p>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <i data-lucide="feather" class="w-8 h-8 text-gray-500"></i>
+      <p class="text-sm text-gray-600">
+        LIGHTWEIGHT
+      </p>
+    </div>
+        </div>
+      </div>
+      <div class="right w-[25%]">
+        <h3 class="text-xl font-semibold py-2 text-center">SIZE</h3>
+        <div class="flex space-x-2">
+          <button
+            class="w-10 h-10 flex items-center justify-center border border-gray-300 hover:bg-[var(--primary-clr)] hover:text-white rounded-lg"
+          >
+            S
+          </button>
+          <button
+            class="w-10 h-10 flex items-center justify-center border border-gray-300 hover:bg-[var(--primary-clr)] hover:text-white rounded-lg size-active"
+          >
+            M
+          </button>
+          <button
+            class="w-10 h-10 flex items-center justify-center border border-gray-300 hover:bg-[var(--primary-clr)] hover:text-white rounded-lg"
+          >
+            L
+          </button>
+          <button
+            class="w-10 h-10 flex items-center justify-center border border-gray-300 hover:bg-[var(--primary-clr)] hover:text-white rounded-lg"
+          >
+            XL
+          </button>
+        </div>
+        <p
+          class="cursor-pointer py-2 text-sm text-semibold flex items-center justify-center gap-1 group hover:cursor-pointer"
+        >
+          SIZE GUIDE
+          <i
+            data-lucide="chevron-right"
+            class="text-orange-500 group-hover:translate-x-1 transition-transform duration-300"
+          ></i>
+        </p>
+        <hr />
+
+
+        <div class="py-4">
+
+          <h3 class="text-xl font-semibold py-2 text-center">COLOR</h3>
+
+
+          <div class="grid grid-cols-2 gap-5 justify-items-center">
+
+            <div
+              class="group border-2 border-transparent hover:border-[var(--primary-clr)] rounded-2xl transition-all duration-300 hover:shadow-md h-fit w-fit"
+            >
+              <div
+                class="overflow-hidden rounded-xl  flex items-center justify-center group flex flex-col items-center"
+              >
+                <img
+                  src="./assets/ASTRO-Jacket.png"
+                  alt="Beige Hoodie"
+                  class="size-24 object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+                <p class="text-sm font-medium mt-3 tracking-wide text-center">
+                BEIGE
+              </p>
+              </div>
+
+              
+            </div>
+            <div
+              class="group border-2 border-transparent hover:border-[var(--primary-clr)] rounded-2xl transition-all duration-300 hover:shadow-md h-fit w-fit"
+            >
+              <div
+                class="overflow-hidden rounded-xl  flex items-center justify-center group flex flex-col items-center"
+              >
+                <img
+                  src="./assets/ASTRO-Jacket-Red.png"
+                  alt="Red Hoodie"
+                  class="size-24 object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+                <p class="text-sm font-medium mt-3 tracking-wide text-center">
+                RED
+              </p>
+              </div>
+
+              
+            </div>
+            <div
+              class="group border-2 border-transparent hover:border-[var(--primary-clr)] rounded-2xl transition-all duration-300 hover:shadow-md h-fit w-fit"
+            >
+              <div
+                class="overflow-hidden rounded-xl  flex items-center justify-center group flex flex-col items-center"
+              >
+                <img
+                  src="./assets/ASTRO-Jacket-Black.png"
+                  alt="Black Hoodie"
+                  class="size-24 object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <p class="text-sm font-medium mt-3 tracking-wide text-center">
+                BLACK
+              </p>
+              </div>
+
+              
+            </div>
+            <div
+              class="group border-2 border-transparent hover:border-[var(--primary-clr)] rounded-2xl transition-all duration-300 hover:shadow-md h-fit w-fit"
+            >
+              <div
+                class="overflow-hidden rounded-xl  flex items-center justify-center group flex flex-col items-center"
+              >
+                <img
+                  src="./assets/ASTRO-Jacket-White.png"
+                  alt="White Hoodie"
+                  class="size-24 object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+                <p class="text-sm font-medium mt-3 tracking-wide text-center">
+                WHITE
+              </p>
+              </div>
+
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<section class="px-10 pb-10 -mt-10">
+
+
+<div
+  class="grid grid-cols-4 gap-4 bg-[#F7F2EB] border border-[#E7DED4] rounded-[32px] p-5"
+>
+
+
+  <div
+    class="flex items-center gap-4 rounded-2xl p-2 transition-all duration-300 hover:bg-white/60"
+  >
+
+    <div
+      class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-[#EFE7DD]"
+    >
+      <img
+        src="./assets/ASTRO-Jacket-close-short.png"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col justify-center">
+
+      <h3 class="text-xl font-semibold leading-tight tracking-tight">
+        3X WATER- <br />
+        REPELLENT
+      </h3>
+
+      <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+        The fabric repels rain, snow and moisture while keeping you dry.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="flex items-center gap-4 rounded-2xl p-2 transition-all duration-300 hover:bg-white/60"
+  >
+
+    <div
+      class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-[#EFE7DD]"
+    >
+      <img
+        src="./assets/ASTRO-Jacket-sleev%20short.png"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col justify-center">
+
+      <h3 class="text-xl font-semibold leading-tight tracking-tight">
+        3D AREAS <br />
+        PUFFERED
+      </h3>
+
+      <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+        Strategically padded zones maximize insulation without bulk.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="flex items-center gap-4 rounded-2xl p-2 transition-all duration-300 hover:bg-white/60"
+  >
+
+    <div
+      class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-[#EFE7DD]"
+    >
+      <img
+        src="./assets/ASTRO-Jacket-model-wearing-short.png"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col justify-center">
+
+      <h3 class="text-xl font-semibold leading-tight tracking-tight">
+        INSULATION
+      </h3>
+
+      <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+        Thermal filling locks warmth up to -30°C for extreme conditions.
+      </p>
+
+    </div>
+
+  </div>
+
+ 
+  <div
+    class="flex items-center gap-4 rounded-2xl p-2 transition-all duration-300 hover:bg-white/60"
+  >
+
+    <div
+      class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-[#EFE7DD]"
+    >
+      <img
+        src="./assets/ASTRO-Jacket-utility-pocket-short.png"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col justify-center">
+
+      <h3 class="text-xl font-semibold leading-tight tracking-tight">
+        UTILITY <br />
+        POCKETS
+      </h3>
+
+      <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+        Multi-functional pockets for secure storage on the go.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+  
+  <div
+    class="grid grid-cols-4 gap-5 mt-5 bg-[#F7F2EB] border border-[#E7DED4] rounded-[32px] p-6"
+  >
+
+
+    <div class="flex items-start gap-4">
+
+      <i
+        data-lucide="snowflake"
+        class="w-8 h-8 text-black flex-shrink-0"
+      ></i>
+
+      <div>
+        <h4 class="font-semibold">
+          PREMIUM FABRICS
+        </h4>
+
+        <p class="text-sm text-gray-600 mt-1">
+          Durable, high-performance materials.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="flex items-start gap-4">
+
+      <i
+        data-lucide="shield"
+        class="w-8 h-8 text-black flex-shrink-0"
+      ></i>
+
+      <div>
+        <h4 class="font-semibold">
+          THERMAL PROTECTION
+        </h4>
+
+        <p class="text-sm text-gray-600 mt-1">
+          Built for extreme winter climates.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="flex items-start gap-4">
+
+      <i
+        data-lucide="circle"
+        class="w-8 h-8 text-orange-500 flex-shrink-0"
+      ></i>
+
+      <div>
+        <h4 class="font-semibold">
+          DESIGNED FOR FUNCTION
+        </h4>
+
+        <p class="text-sm text-gray-600 mt-1">
+          Every detail serves a purpose.
+        </p>
+      </div>
+
+    </div>
+
+   
+    <div class="flex items-start gap-4">
+
+      <i
+        data-lucide="star"
+        class="w-8 h-8 text-orange-500 flex-shrink-0"
+      ></i>
+
+      <div>
+        <h4 class="font-semibold">
+          LIMITED EDITION
+        </h4>
+
+        <p class="text-sm text-gray-600 mt-1">
+          Exclusive drops, limited quantities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
